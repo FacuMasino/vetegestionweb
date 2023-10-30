@@ -3,7 +3,7 @@
 body {
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
-  background-image: url("/img/bg.jpg");
+  background-image: url("/assets/img/bg.jpg");
   background-position: top top;
   background-size: cover;
   margin: 0;
