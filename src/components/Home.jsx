@@ -3,16 +3,17 @@ import { Box, Typography, Button } from '@mui/material';
 const Home = () => {
     return (
       <Box sx={{ 
+        height: 'calc(100vh - 64px)',
         display: 'flex', 
         justifyContent: 'space-between', 
         alignItems: 'center',
         background: `linear-gradient(180deg, rgba(70, 23, 203, 0.8) 0%, rgba(144, 45, 190, 0.8) 100%),
-        url('./src/assets/headerbg.jpg')`, 
+        url('/headerbg.jpg')`, 
         backgroundSize: 'cover' 
         }}>
         <Box sx={{display: 'flex', flexDirection:  'column', alignItems: 'center', }}>
           <Typography 
-            variant="h2"
+            variant="h3"
             sx={{
                 padding: '1em',
                 fontSize: '50px', 
@@ -42,15 +43,14 @@ const Home = () => {
           <Button 
             variant="contained"
             sx={{
-                padding: '10px',
                 background: 'linear-gradient(0deg, #0A0957, #0A0957), linear-gradient(0deg, #180972, #180972)',
                 backgroundSize: 'cover'
             }}
             >
                 Descargar ahora</Button>
         </Box>
-        <Box>
-          <img src="./src/assets/win.png" alt="Imagen de inicio" width="553" height="447"/>
+        <Box sx={{margin: 'auto', maxWidth: '553px'}}>
+          <img src="/win.png" alt="Imagen de inicio" width="100%" height="auto"/>
         </Box>
       </Box>
     );

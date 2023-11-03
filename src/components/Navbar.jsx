@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <AppBar position="static" color="default">
-      <Toolbar sx={{ justifyContent: 'space-around' }}>
+      <Toolbar sx={{ justifyContent: 'space-around', minHeight: '64px' }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Vete++
