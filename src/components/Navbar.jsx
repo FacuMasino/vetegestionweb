@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <AppBar position="static" color="default">
       <Toolbar sx={{ justifyContent: 'space-around', minHeight: '64px' }}>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'start', fontWeight: 'medium' }}>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Vete++
             </Typography>
@@ -13,7 +13,7 @@ const Navbar = () => {
             Gestión veterinaria
             </Typography>
         </Box >
-        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, fontWeight: 700 }}>
             <Button color="inherit" component={Link} to="/">Home</Button>
             <Button color="inherit" component={Link} to="/downloads">Descargas</Button>
             <Button color="inherit" component={Link} to="/contact">Quienes Somos</Button>

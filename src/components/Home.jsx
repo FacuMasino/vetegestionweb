@@ -1,9 +1,9 @@
-import { Box, Typography, Button } from '@mui/material';
+import { Typography, Button, Grid } from '@mui/material';
 
 const Home = () => {
     return (
-      <Box sx={{ 
-        height: 'calc(100vh - 64px)',
+      <Grid container sx={{ 
+        minHeight: 'calc(100vh - 64px)',
         display: 'flex', 
         justifyContent: 'space-between', 
         alignItems: 'center',
@@ -11,13 +11,13 @@ const Home = () => {
         url('/headerbg.jpg')`, 
         backgroundSize: 'cover' 
         }}>
-        <Box sx={{display: 'flex', flexDirection:  'column', alignItems: 'center', }}>
+        <Grid item xs={12} sm={6} sx={{display: 'flex', flexDirection:  'column', alignItems: 'center', }}>
           <Typography 
-            variant="h3"
+            variant="h2"
             sx={{
                 padding: '1em',
                 fontSize: '50px', 
-                fontWeight: 700,
+                fontWeight: 'medium',
                 lineHeight: '75px',
                 letterSpacing: '0em',
                 textAlign:'left',
@@ -31,7 +31,7 @@ const Home = () => {
             sx={{
                 padding: '1em',
                 fontSize: '24px',
-                fontWeight: '24px',
+                fontWeight: 'medium',
                 lineHeight: '36px',
                 letterSpacing: '0em',
                 textAlign: 'left',
@@ -44,15 +44,16 @@ const Home = () => {
             variant="contained"
             sx={{
                 background: 'linear-gradient(0deg, #0A0957, #0A0957), linear-gradient(0deg, #180972, #180972)',
-                backgroundSize: 'cover'
+                backgroundSize: 'cover',
+                marginBottom: '2em'
             }}
             >
                 Descargar ahora</Button>
-        </Box>
-        <Box sx={{margin: 'auto', maxWidth: '553px'}}>
+        </Grid>
+        <Grid sx={{margin: 'auto', maxWidth: '553px'}}>
           <img src="/win.png" alt="Imagen de inicio" width="100%" height="auto"/>
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     );
    }
    
